@@ -53,7 +53,8 @@ You can initiate a client by giving the secret params
 ```python
 Playlyfe(
    secret # the secret of your user
-   debug # whether you would like to see debug logs when developing
+   endPoint = "http://localhost:3212/graphql" # The endPoint of the api server
+   debug = False # whether you would like to see debug logs when developing
 )
 ```
 
