@@ -12,12 +12,12 @@ Python 3.5.1
 Install
 ----------
 ```python
-pip install playlyfe-graphql
+pip install playlyfe_grapqhl
 ```
 or if you are using django or flask
 Just add it to your requirements.txt file
 ```python
-playlyfe-graphql==0.1.0
+playlyfe_grapqhl==0.1.0
 ```
 and do a pip install -r requirements.txt
 
@@ -104,3 +104,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+Contributing
+============
+```python
+pip install twine wheel
+python setup.py bdist_wheel
+# if this is a new project then you need to do this twine register dist/*
+twine upload dist/*
+```
