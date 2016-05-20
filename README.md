@@ -67,19 +67,24 @@ graphql(
 ```
 
 **create_jwt**
+```python
 create_jwt(
   user_id # the id of the user who you want to make requests with
   expires = 3600 # the expiry time of the token in seconds
 )
+```
 
 **Errors**
+
 A ```PlaylyfeException``` is thrown whenever an error is returned from our servers in each call.
 The Error contains a name and message field which can be used to determine the type of error that occurred.
 
 License
 =======
 Playlyfe Python GraphQL SDK v0.1.0
+
 http://dev.playlyfe.com/
+
 Copyright(c) 2015-2016, Playlyfe IT Solutions Pvt. Ltd, support@playlyfe.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
