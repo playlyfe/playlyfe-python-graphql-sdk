@@ -32,7 +32,7 @@ def client():
     debug = True,
   )
   token = pl.create_jwt(user_id="your user id")
-  root = pl.get(token, '''
+  root = pl.graphql(token, '''
   query K {
     root {
       games {
